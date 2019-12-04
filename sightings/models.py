@@ -1,13 +1,7 @@
 from django.db import models
-
+from django.utils.translation import gettext as _
 <<<<<<< HEAD
 class squirrel(modesl.Model):
-    name = models.CharField(
-            help_text=_('Latitude'),
-    )
-=======
-from django.utils.translation import gettext as _
-class sighting(models.Model):
     Latitude = models.FloatField(help_text=_('Latitude'),
                                max_length=10,)
     Longitude = models.FloatField(help_text=_('Latitude'),
