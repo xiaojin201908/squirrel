@@ -18,7 +18,7 @@ from django.core.management.base import BaseCommand, CommandError
 from django.db.models.loading import get_model
 
 class Command(BaseCommand):
-    args = 'Model.csv'
+    args = 'squirrel_n.csv'
     help = 'Import `Model`.csv into `Model` database.'
 
     def handle(self, *args, **options):
