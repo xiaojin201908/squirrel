@@ -12,4 +12,16 @@ class squirrel(modesl.Model):
     Unique_Squirrel_ID = models.IntegerField(primary_key=True) 
     def __str__(self):
       return self.Unique_Squirrel_ID
+    Shift = models.CharField(help_text=_('Shift'),max_length=100,)
+    Date = models.DateField(
+            help_text=_('Date'),
+    )
+    Age = models.FloatField(
+            help_text=_('Age of squirrel'),
+            max_length = 100,)
+    Fur_Colors = (
+            (GRAY, 'Gray'),
+            (CINNAMON,'Cinnamon'),
+            (BLACK,'Black'),
+    )
 
