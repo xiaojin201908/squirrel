@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class squirrel(modesl.Model):
+    name = models.CharField(
+            help_text=_('Latitude'),
+    )
